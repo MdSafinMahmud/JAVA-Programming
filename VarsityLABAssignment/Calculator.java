@@ -7,7 +7,7 @@ public class Calculator {
             System.out.print("Enter first number: ");
             double a = sc.nextDouble();
 
-            System.out.print("Enter second number: ");
+            System.out.println("Enter second number: ");
             double b = sc.nextDouble();
 
             System.out.println("1. Addition (+)");
@@ -20,20 +20,23 @@ public class Calculator {
             int choice = sc.nextInt();
 
             switch (choice) {
-                case 1 ->
+                case 1 -> {
                     System.out.println("Result: " + (a + b));
+                }
 
-                case 2 ->
+                case 2 -> {
                     System.out.println("Result: " + (a - b));
+                }
 
-                case 3 ->
+                case 3 -> {
                     System.out.println("Result: " + (a * b));
+                }
 
                 case 4 -> {
                     if (b != 0) {
                         System.out.println("Result: " + (a / b));
                     } else {
-                        System.out.println("Cannot divide by zero.");
+                        System.out.println("Can't divide by zero.");
                     }
                 }
 
@@ -41,12 +44,13 @@ public class Calculator {
                     if (b != 0) {
                         System.out.println("Result: " + (a % b));
                     } else {
-                        System.out.println("Cannot calculate modulus by zero.");
+                        System.out.println ("Cannot calculate modulus by zero.");
                     }
                 }
 
-                default ->
+                default -> {
                     System.out.println("Invalid option.");
+                }
             }
         }
     }
