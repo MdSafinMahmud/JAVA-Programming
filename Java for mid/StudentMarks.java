@@ -18,7 +18,7 @@ public class StudentMarks {
         double total = (s1 + s2 + s3 + s4 + s5);
         double percentage = ((total / 500) * 100);
         System.out.println("Total marks: " + total);
-        System.out.println("Total percantage: " + percentage);
+        System.out.println("Total percantage: " + percentage+"%");
         sc.close();
     }
 }
